@@ -1,6 +1,6 @@
-# ice-cream-shop
+# Ice Cream Shop
 
-##Instructions:
+## Instructions:
 
 some guys arrive in a ice cream shop and want to buy the most expensive
 ice cream according to their budget.
