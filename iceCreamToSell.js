@@ -13,29 +13,16 @@ class IceCreamsToSell extends IceCream {
         this.price = iceCream.price;
     }
 
-    areMoreThan1() {
-        return this.name[0][0] != undefined;
-    }
-
-    getFirstIceCreamToSell() {
-        console.log("A " + this.name);
-        console.log("A " + this.name[0][0]);
-        if (this.areMoreThan1()) {
-            return this.name[0];
-        }
-        return this.name;
-    }
-
     getString() {
-        let iceCreamsToSellString = this.getFirstIceCreamToSell().toLowerCase();
-        console.log("name len: " + this.name.length)
-        if (this.areMoreThan1()) {
-            console.log(iceCreamsToSellString);
-            for (let iceCreamCounter = 1; iceCreamCounter < this.name.length; iceCreamCounter++) {
-                iceCreamsToSellString += (", " + this.name[iceCreamCounter].toLowerCase());
-                console.log(iceCreamsToSellString);
+        let iceCreamsToSellString = "";
+        this.name.forEach(iceCreamName => {
+            if (iceCreamsToSellString.length > 0) {
+                iceCreamsToSellString += ", ";
             }
-        }
+            iceCreamsToSellString += (iceCreamName.toLowerCase());
+            console.log(iceCreamsToSellString);
+        })
+        console.log(iceCreamsToSellString);
         return iceCreamsToSellString;
     }
 }
