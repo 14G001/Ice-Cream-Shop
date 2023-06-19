@@ -1,5 +1,7 @@
 # Ice Cream Shop
 
+![iceCreamShop](https://github.com/14G001/Ice-Cream-Shop/assets/90991274/1e1cd4c7-6131-401f-83d7-6fb35852fc80)
+
 ## Instructions:
 
 some guys arrive in a ice cream shop and want to buy the most expensive
