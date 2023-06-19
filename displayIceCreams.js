@@ -14,9 +14,11 @@ function getRow(styleClass, leftText, rightText) {
     return listRow;
 }
 
-const iceCreams = [new IceCream("Banana Split", 600),   new IceCream("Chocolate", 500),
-                   new IceCream("Strawberry",   500),   new IceCream("Cream",     400),
-                   new IceCream("Lemon",        300)];
+const iceCreams = [new IceCream("Lemon",        300),   new IceCream("Chocolate", 500),
+                   new IceCream("Banana Split", 600),   new IceCream("Cream",     400),
+                   new IceCream("Strawberry",   500)];
+
+iceCreams.sort((iceCream1, iceCream2) => iceCream1.compareDescending(iceCream2));
 
 let list = document.getElementById("main__list");
 let listElements = document.createDocumentFragment();
