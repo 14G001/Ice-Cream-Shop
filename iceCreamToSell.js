@@ -8,7 +8,6 @@ class IceCreamsToSell extends IceCream {
     isEmpty() { return this.price == NO_ICE_CREAM_TO_SELL; }
     
     add(iceCream) {
-        console.log("add " + iceCream.name)
         this.name.push(iceCream.name);
         this.price = iceCream.price;
     }
@@ -20,9 +19,7 @@ class IceCreamsToSell extends IceCream {
                 iceCreamsToSellString += ", ";
             }
             iceCreamsToSellString += (iceCreamName.toLowerCase());
-            console.log(iceCreamsToSellString);
         })
-        console.log(iceCreamsToSellString);
         return iceCreamsToSellString;
     }
 }
